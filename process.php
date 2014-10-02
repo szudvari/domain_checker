@@ -389,19 +389,19 @@ if (isset($_POST['domain']) && !empty($vpb_domain_name_to_search)) { //Be sure t
                 fclose($vpb_socket);
 
                 if (preg_match('/' . $vpb_domain_whois[1] . '/', $vpb_availability)) {
-                    echo '<div id="vasplus_pb"><div class="available"><div style="float:left; width:280px; border:0px solid; padding-top:3px; padding-bottom:2px;"><span>Szabad</span>' . $vpb_cleaned_domain_name_to_search . '<b>' . $vpb_domain_servers_ext . '</b> szabad</div><div style="float:right;" align="right"><div class="vpb_general_button" style="color:#FFF; padding:3px; font-family:Verdana, Geneva, sans-serif; font-size:11px; cursor:pointer; margin:0px;" onclick="vpb_buy_now(\'' . $vpb_cleaned_domain_name_to_search . $vpb_domain_servers_ext . '\')">Buy Now</div></div><br clear="all" /></div></div><br />';
+                    echo '<div id="vasplus_pb"><div class="available"><div style="float:left; width:280px; border:0px solid; padding-top:3px; padding-bottom:2px;"><span>Szabad</span>' . $vpb_cleaned_domain_name_to_search . '<b>' . $vpb_domain_servers_ext . '</b> szabad</div><div style="float:right;" align="right"><div class="vpb_general_button" style="color:#FFF; padding:3px; font-family:Verdana, Geneva, sans-serif; font-size:11px; cursor:pointer; margin:0px;" onclick="vpb_buy_now(\'' . $vpb_cleaned_domain_name_to_search . $vpb_domain_servers_ext . '\')">Lefoglalom</div></div><br clear="all" /></div></div><br />';
                 } else {
                     echo '<div id="vasplus_pb"><div class="taken"><span>Foglalt</span>' . $vpb_cleaned_domain_name_to_search . '<b>' . $vpb_domain_servers_ext . '</b> foglalt</div></div><br />';
                 }
             } else {
-                echo '<br><div class="info">Sorry, there was an error connecting to the server. Please be sure that you are connected to the internet and try again. Thanks.</div>';
+                echo '<br><div class="info">Elnézést, hiba történt a szerverhez való csatlakozás során. Kérem próbálja meg később!</div>';
                 return false;
             }
         }
     } else {
-        echo '<div class="info">Please enter a domain name of your choice to search.</div>';
+        echo '<div class="info">Kérem, írja be a domain nevet!</div>';
     }
 } else {
-    echo '<div class="info">Please enter a domain name of your choice to search.</div>';
+    echo '<div class="info">Kérem, írja be a domain nevet!</div>';
 }
 ?>

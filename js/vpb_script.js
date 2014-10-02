@@ -18,7 +18,7 @@ function vpb_buy_now(selected_domain_to_buy)
 // Auto submit search for this domain when the user preses the enter key on his or her computer
 $(document).ready(function()
 {
-	$("#suggested_names").Watermark("Enter a desired domain name here"); 
+	$("#suggested_names").Watermark("Írja be a keresett domain nevét!"); 
 	
 	//Search domain on pressing of the enter key on computer keyboard
 	$('#suggested_names').live("keydown",function(vpb_event) 
@@ -33,9 +33,9 @@ $(document).ready(function()
 //Search domain function
 function vpb_check_this_domain()
 {	
-	if ($('#suggested_names').val() == "" || $('#suggested_names').val() == "Enter a desired domain name here")
+	if ($('#suggested_names').val() == "" || $('#suggested_names').val() == "Írja be a keresett domain nevét!")
 	{
-		$("#vpb_search_status").html('<br clear="all"><br clear="all"><div class="info">Please enter a domain name of your choice to search.</div><br clear="all"><br clear="all">');
+		$("#vpb_search_status").html('<br clear="all"><br clear="all"><div class="info">Írja be a keresett domain nevét!</div><br clear="all"><br clear="all">');
 		$('#suggested_names').focus();
 		return false;
 	}
@@ -50,7 +50,7 @@ function vpb_check_this_domain()
 			cache: false,
 			beforeSend: function() 
 			{
-				$("#vpb_search_status").html('<br clear="all"><br clear="all"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px;">Please wait</font> <img src="images/loadings.gif" align="absmiddle" alt="Loading..."><br clear="all"><br clear="all">');
+				$("#vpb_search_status").html('<br clear="all"><br clear="all"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px;">Please wait</font> <img src="images/loadings.gif" align="absmiddle" alt="Keresés..."><br clear="all"><br clear="all">');
 			},  
 			success: function(response)
 			{
