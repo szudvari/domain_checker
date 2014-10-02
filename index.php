@@ -19,7 +19,7 @@
 </head>
 <body>
 <br clear="all">
-
+<h2>Domai név keresése</h2>
 
 <!-- Code Begins -->
 <center>
