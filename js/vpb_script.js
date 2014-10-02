@@ -11,7 +11,7 @@
 function vpb_buy_now(selected_domain_to_buy)
 {
 	//You can make use of the domain name here as wish
-	alert(selected_domain_to_buy);
+	window.open('http://www.webariel.hu/docs/JSS_Domain_igenylo.pdf', '_blank');
 	return false;
 }
 
@@ -50,7 +50,7 @@ function vpb_check_this_domain()
 			cache: false,
 			beforeSend: function() 
 			{
-				$("#vpb_search_status").html('<br clear="all"><br clear="all"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px;">Please wait</font> <img src="images/loadings.gif" align="absmiddle" alt="Keresés..."><br clear="all"><br clear="all">');
+				$("#vpb_search_status").html('<br clear="all"><br clear="all"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px;">Kérem várjon!</font> <img src="images/loadings.gif" align="absmiddle" alt="Keresés..."><br clear="all"><br clear="all">');
 			},  
 			success: function(response)
 			{

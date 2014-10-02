@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>vasPLUS Programming Blog - Domain Name Checker using Ajax, Jquery and PHP</title>
+<title>Domain név ellenőrzés</title>
 
 
 
